@@ -33,21 +33,13 @@ This revolutionary function lets you fill your contribution graph with commits, 
 
 ## Files
 
-- `yearly_commit.py`: Generate commits for the past year
 - `range_commit.py`: Generate commits for a custom date range
 - `main.py`: Entry point that runs today's commit
 
 ## Usage
 
-### Option 1: Past Year Commits
-In `yearly_commit.py`, customize your start date:
-```python
-# Change this line to set your desired start date
-start_date = end_date - timedelta(days=365)  # Default: 1 year ago
-# Example: start_date = datetime(2023, 1, 1)  # From January 1, 2023
-```
 
-### Option 2: Custom Date Range
+### Option 1: Custom Date Range
 In `range_commit.py`, set your desired date range:
 ```python
 # Example usage:
@@ -56,7 +48,7 @@ end = datetime(2024, 4, 21)
 perform_commits(start, end)
 ```
 
-### Running the Script
+### Running the Script for daily commit
 ```bash
 # Option 1: Manual (for the dedicated clickers)
 python main.py
