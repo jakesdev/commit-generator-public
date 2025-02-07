@@ -34,7 +34,7 @@ This revolutionary function lets you fill your contribution graph with commits, 
 ## Files
 
 - `range_commit.py`: Generate commits for a custom date range
-- `main.py`: Entry point that runs today's commit
+- `daily_commit.py`: Entry point that runs today's commit
 
 ## Usage
 
@@ -51,11 +51,11 @@ perform_commits(start, end)
 ### Running the Script for daily commit
 ```bash
 # Option 1: Manual (for the dedicated clickers)
-python main.py
+python daily_commit.py
 
 # Option 2: Automated (for server owners)
 # Add to crontab to run daily at midnight:
-0 0 * * * cd /path/to/repo && python main.py
+0 0 * * * cd /path/to/repo && python daily_commit.py
 ```
 
 Watch as your contribution graph magically comes alive! 🌱
